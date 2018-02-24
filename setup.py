@@ -9,6 +9,6 @@ setup(name='messaging-app',
       packages=['messaging_app'],
       include_package_data=True,
       install_requires=[
-          'Flask==0.12.2',
+          'Flask==0.12.2'
       ],
       zip_safe=False)
