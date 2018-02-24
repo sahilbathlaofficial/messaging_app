@@ -1,22 +1,3 @@
-.btn {
-  height: 38px;
-  border-radius: 3px;
-  text-align: center;
-  padding: 10px;
-  border: none;
-  width: 100px;
-  margin-left: 10px;
-  font-size: 14px;
-  outline: none; }
-  .btn--primary {
-    background-color: #009DEA;
-    color: #fff; }
-  .btn--cancel {
-    color: #788290;
-    border: none;
-    padding: 0;
-    background: transparent; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -43,6 +24,9 @@ body {
 .fl-r {
   float: right; }
 
+.fl-l {
+  float: left; }
+
 .chat-box {
   margin: 40px; }
 
@@ -54,7 +38,8 @@ body {
   min-height: 30px;
   padding: 15px 20px;
   border-radius: 5px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  line-height: 1.4em; }
   .message-box__header {
     margin-bottom: 10px; }
   .message-box__header__name {
@@ -70,5 +55,24 @@ body {
   margin-top: 20px;
   min-height: 100px;
   padding: 10px 20px;
-  border-radius: 5px;
   font-size: 14px; }
+
+.btn {
+  height: 38px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  width: 100px;
+  margin-left: 10px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer; }
+  .btn--primary {
+    background-color: #009DEA;
+    color: #fff; }
+  .btn--cancel {
+    color: #788290;
+    border: none;
+    padding: 0;
+    background: transparent; }
