@@ -141,8 +141,6 @@ class Comments extends React.Component {
   }
 }
 
-
-
 const element = <Comments/>;
 ReactDOM.render(
 	element,
