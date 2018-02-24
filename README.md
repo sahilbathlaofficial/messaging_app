@@ -11,6 +11,8 @@ Basic messaging app using Flask & ReactJs
 6. `flask run`
 7. Visit `http://127.0.0.1/` to get started
 
+**Note:** All messages will be deleted on restarting the app leaving one seeded message
+
 # Setup frontend
 
 1. Install npm

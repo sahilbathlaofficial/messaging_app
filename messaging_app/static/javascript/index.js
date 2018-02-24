@@ -9,6 +9,12 @@ if (!localStorage.getItem('userId')) {
     localStorage.setItem('userId', new Date().getTime())
 }
 
+/*
+  This component takes care of adding new comment
+  emptyMessage: Will remove any message entered by user
+  sendMessage: Will send the user message to server & reload on success
+*/
+
 class AddComment extends React.Component {
   constructor(props) {
     super(props);
@@ -53,6 +59,12 @@ class AddComment extends React.Component {
     this.setState({message: event.target.value});
   }
 }
+
+
+/*
+  This component takes care of displaying all comments
+  isCurrentUser: Tells if the user is current one running the session or other
+*/
 
 class Comments extends React.Component {
   constructor(props) {
@@ -110,7 +122,7 @@ class Comments extends React.Component {
       return (
         <div className="chat-box">
           {items.map((item, i) => (
-            <div className={"message-box " + (this.isCurrentUser(item.userId) ? 'fl-r' : '') } key={i}>
+            <div className={"message-box " + (this.isCurrentUser(item.userId) ? 'fl-r' : 'fl-l') } key={i}>
               <div className="message-box__header">
                 <span className="message-box__header__name ">
                   { this.isCurrentUser(item.userId) ? 'You wrote:' : 'Peer #1 wrote:' }

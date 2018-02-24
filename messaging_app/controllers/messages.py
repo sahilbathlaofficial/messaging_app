@@ -5,6 +5,9 @@ from messaging_app import app
 import messaging_app.db.sqlite_helper as sqlite_helper
 
 @app.route('/messages')
+'''
+	This route is to get all messages from database & return a json of it
+'''
 def get_messages():
     sqlite = sqlite_helper.SqliteHelper()
     sqlite.execute('SELECT * from messages')
