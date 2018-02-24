@@ -1,0 +1,24 @@
+.btn {
+	height: 38px;
+	border-radius: 3px;
+	text-align: center;
+	padding: 2 * $base-spacing-unit;
+	border: none;
+	width: 100px;
+	margin-left: 2 * $base-spacing-unit;
+	font-size: $base-font-size;
+	outline: none;
+	cursor: pointer;
+
+	&--primary {
+		background-color: $color-blue;
+		color: $color-white;
+	}
+
+	&--cancel {
+		color: $color-grey-dark;
+		border: none;
+		padding: 0;
+		background: transparent;
+	}
+}

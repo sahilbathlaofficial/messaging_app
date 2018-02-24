@@ -15,3 +15,11 @@ sqlite.execute(
 		m_time timestamp
 	);
 ''')
+
+#Load dummy messages
+sqlite.execute('DELETE from messages')
+sqlite.execute(
+'''
+	INSERT INTO messages(content, user_id, m_time) VALUES('Hey this is the first message', 1, 1519463205);
+''')
+sqlite.close()

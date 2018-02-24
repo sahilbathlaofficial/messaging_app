@@ -1,0 +1,33 @@
+@import '_variables';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Helvetica Neue', sans-serif;
+	height: 100%;
+}
+
+body {
+	background: $color-light-blue;
+	font-size: $base-font-size;
+	color: $color-grey-darkest;
+}
+
+.mr-10 {
+	margin-right: 2 * $base-spacing-unit;
+}
+
+.mt-20 {
+	margin-top: 4 * $base-spacing-unit;
+}
+
+.fl-r {
+	float: right;
+}

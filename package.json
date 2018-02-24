@@ -1,0 +1,16 @@
+{
+  "name": "MessageBox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {},
+  "author": "Sahil",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "start": "grunt sass"
+  },
+  "license": "ISC"
+}

@@ -12,7 +12,7 @@ class SqliteHelper:
 		self.connection.commit()
 
 	def fetch_rows(self):
-		self.rows = self.cursor.fetchall()
+		return self.cursor.fetchall()
 
 	def close(self):
 		self.connection.close()
